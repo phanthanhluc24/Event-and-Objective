@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           #do{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background:#00000099;
+            top:7%;
+            left: 10.4%;
+        }
+        #vang{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background:#00000099;
+            top:22%;
+            left: 10.4%;
+        }
+        #xanh{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background:#00000099;
+            top:36%;
+            left: 10.4%;
+        }
+    </style>
+</head>
+<body>
+    <img src="./Photo/gt.png" alt="">
+    <div id="xanh"></div>
+    <div id="vang"></div>
+    <div id="do"></div>
+    <button id="blue">Xanh</button>
+    <button id="yellow">Đỏ</button>
+    <button id="red">Vàng</button>
+</body>
+<script>
+    var but1=document.getElementById("blue")
+    var but2=document.getElementById("red")
+    var but3=document.getElementById("yellow")
+    var div1=document.getElementById("xanh")
+    var div2=document.getElementById("do")
+    var div3=document.getElementById("vang")
+
+    but1.onclick = function(){
+        div1.style.display="none";
+        div2.style.display="block";
+        div3.style.display="block";
+    }
+    but2.onclick = function(){
+        div3.style.display="none";
+        div1.style.display="block";
+        div2.style.display="block";
+    }
+    but3.onclick = function(){
+        div2.style.display="none";
+        div1.style.display="block";
+        div3.style.display="block";
+    }
+</script>
+</html>
