@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin-left: 450px;
+            border: 1px solid red;
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    Bảng điểm của em 
+    <br>
+    Năm 1: <input id="n1" type="text" name="" value="" placeholder="Nhập điểm năm 1: ">
+    <br>
+    Năm 2: <input id="n2" type="text" name="" value="" placeholder="Nhập điểm năm 1: ">
+    <br>
+    Year: <select name="" id="year">
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+  
+          </select>
+  <br>
+  <br>
+  Tổng: <input id="sum" type="text" name="" value="">
+  
+  <br>
+  <pre>
+  <button onclick="Clickme()">OK</button>  <button onclick="Clickcancel()">Cancel</button> 
+  </pre>
+  
+  <br>
+  <br>
+  <br>
+</body>
+  <script>
+      function Clickme(){
+           var y1=document.getElementById("n1").value;
+          var y2=document.getElementById("n2").value;
+          var yearyour=document.getElementById("year").value;
+         if(yearyour==1){
+              var sum=((parseInt(y1)+(parseInt( y2)*2))/3)
+         }else if(yearyour==2){
+             var sum=((parseInt(y1)+(parseInt( y2)*3))/4)
+         }else{
+             var sum=((parseInt(y1)+(parseInt( y2)*4))/5)
+      }
+         document.getElementById("sum").value=sum;
+      }
+  
+      function Clickcancel(){
+          alert("Chúc bạn một ngày tốt lành")
+      } 
+  </script>
+</html>
