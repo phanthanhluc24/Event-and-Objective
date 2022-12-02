@@ -24,8 +24,6 @@ Vui lò chọn số: <input id="chose" type="number" name="" value="">
 </div>
 <button onclick="Ok()">OK</button><br>
 </pre>
-
-
 <div id="select-weater"> Chọn món: <select name="" id="weater">
     <option value="">Vui lòng chọn</option>
     <option value="">Nước Suối</option>
@@ -119,7 +117,7 @@ Kết luận: <p id="inclu"></p>
                     alert("Tiền của bạn không đủ để mua")
                 }else{
                     var retur=price-17000;
-                    document.getElementById("inclu").innerHTML="Sản phẩm bạn mua là: "+giaTri +"\n \ "+ " Có giá là: "+ 17000 +" Số tiền của bạn: "+ price + "\n \ "+"Tiền dư là: "+retur
+                    document.getElementById("inclu").innerHTML="Sản phẩm bạn mua là: "+giaTri +"<br>"+ " Có giá là: "+ 17000 +"<br>"+" Số tiền của bạn: "+ price + "<br>"+"Tiền dư là: "+retur
                 }
                 break;
             case "BÒ HÚC":
@@ -127,7 +125,7 @@ Kết luận: <p id="inclu"></p>
                     alert("Tiền của bạn không đủ để mua")
                 }else{
                     var retur=price-20000;
-                    document.getElementById("inclu").innerHTML="Sản phẩm bạn mua là: "+giaTri +"\n \ "+ " Có giá là: "+ 20000 +" Số tiền của bạn: "+ price + "\n \ "+"Tiền dư là: "+retur
+                    document.getElementById("inclu").innerHTML="Sản phẩm bạn mua là: "+giaTri +"<br>"+ " Có giá là: "+ 20000+"<br>" +" Số tiền của bạn: "+ price +"<br>"+"Tiền dư là: "+retur
                 }
                 break;
             case "Vui lòng chọn":
@@ -143,7 +141,7 @@ Kết luận: <p id="inclu"></p>
                         alert("Tiền của bạn không đủ để mua")
                     }else{
                         var retur=price-12900;
-                        document.getElementById("inclu").innerHTML="Sản phẩm bạn mua là: "+valu +"\n \ "+ " Có giá là: "+ 12900 +" Số tiền của bạn: "+ price + "\n \ "+"Tiền dư là: "+retur
+                        document.getElementById("inclu").innerHTML="Sản phẩm bạn mua là: "+valu +"<br>"+ " Có giá là: "+ 12900+"<br>" +" Số tiền của bạn: "+ price +"<br>"+"Tiền dư là: "+retur
                     }
                     break;
             case "Trái Cây Nhỏ":
@@ -151,7 +149,7 @@ Kết luận: <p id="inclu"></p>
                         alert("Tiền của bạn không đủ để mua")
                     }else{
                         var retur=price-99000;
-                        document.getElementById("inclu").innerHTML="Sản phẩm bạn mua là: "+valu +"\n \ "+ " Có giá là: "+ 99000 +" Số tiền của bạn: "+ price + "\n \ "+"Tiền dư là: "+retur
+                        document.getElementById("inclu").innerHTML="Sản phẩm bạn mua là: "+valu +"<br>"+ " Có giá là: "+ 99000+"<br>" +" Số tiền của bạn: "+ price +"<br>"+"Tiền dư là: "+retur
                     }
                     break;
             case "BƯởI":
@@ -159,7 +157,7 @@ Kết luận: <p id="inclu"></p>
                         alert("Tiền của bạn không đủ để mua")
                     }else{
                         var retur=price-18900;
-                        document.getElementById("inclu").innerHTML="Sản phẩm bạn mua là: "+valu+"\n \ "+ " Có giá là: "+ 18900 +" Số tiền của bạn: "+ price + "\n \ "+"Tiền dư là: "+retur
+                        document.getElementById("inclu").innerHTML="Sản phẩm bạn mua là: "+valu+"<br>"+ " Có giá là: "+ 18900+"<br>" +" Số tiền của bạn: "+ price +"<br>"+"Tiền dư là: "+retur
                     }
                     break;
             case "Vui lòng chọn":
@@ -169,10 +167,6 @@ Kết luận: <p id="inclu"></p>
                 break;
         }
         }
-       
-
-        
-      
     }
     function Mycancel(){
         alert("Cảm ơn bạn đã ghé thăm")
